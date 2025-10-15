@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="search-section" id="searchSection">
+            <div class="search-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar productos por nombre, marca, código o categoría...">
+                    <button id="searchBtn">🔍</button>
+                </div>
+                
+                <div class="filters">
+                    <select id="categoryFilter">
+                        <option value="">Todas las categorías</option>
+                    </select>
+                    
+                    <select id="sortBy">
+                        <option value="id" selected>Ordenar por ID</option>
+                        <option value="name">Ordenar por nombre</option>
+                        <option value="price">Ordenar por precio</option>
+                        <option value="stock">Ordenar por stock</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="results-info">
+                <span id="resultsCount">0 productos encontrados</span>
+                <div class="search-help">
+                    <small>💡 Busca por nombre, marca, código o categoría</small>
+                </div>
+                <button id="clearFilters" class="clear-btn">Limpiar filtros</button>
+                <button id="salesPageBtn" class="sales-btn" onclick="window.location.href='ventas.html'">💰 Ver Ventas</button>
+            </div>
+            </div>
+        </header>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- Los productos se mostrarán aquí dinámicamente -->
+        </div>
+
+        <div class="no-results" id="noResults" style="display: none;">
+            <div class="no-results-content">
+                <div class="no-results-icon">😔</div>
+                <h3>No se encontraron productos</h3>
+                <p>Intenta ajustar tus criterios de búsqueda</p>
+            </div>
+        </div>
+
+        <!-- Sección de Productos Vendidos -->
+        <div class="sold-products-section" id="soldProductsSection" style="display: none;">
+            <div class="section-header">
+                <h2>🛒 Productos Vendidos</h2>
+                <p>Productos que han sido marcados como vendidos</p>
+                <button id="clearSoldHistory" class="clear-history-btn" onclick="clearSoldHistory()">
+                    🗑️ Limpiar Historial
+                </button>
+            </div>
+            
+            <div class="sold-products-grid" id="soldProductsGrid">
+                <!-- Los productos vendidos se mostrarán aquí dinámicamente -->
+            </div>
+            
+            <div class="no-sold-products" id="noSoldProducts" style="display: none;">
+                <div class="no-sold-content">
+                    <div class="no-sold-icon">📦</div>
+                    <h3>No hay productos vendidos</h3>
+                    <p>Los productos que marques como vendidos aparecerán aquí</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>📦 Catálogo de Productos</h3>
+                <p>Gestiona tu inventario de manera eficiente</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" title="Facebook">
+                        <span>📘</span> Facebook
+                    </a>
+                    <a href="#" class="social-link instagram" title="Instagram">
+                        <span>📷</span> Instagram
+                    </a>
+                    <a href="#" class="social-link whatsapp" title="WhatsApp">
+                        <span>💬</span> WhatsApp
+                    </a>
+                    <a href="#" class="social-link email" title="Email">
+                        <span>📧</span> Email
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Información</h4>
+                <p>© 2025 Catálogo de Productos</p>
+                <p>Desarrollado para construir una marca</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón para regresar al principio -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

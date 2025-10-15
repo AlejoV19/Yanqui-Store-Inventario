@@ -1,0 +1,455 @@
+/* Estilos específicos para la página de ventas */
+
+/* Header de Ventas */
+.sales-header {
+    background: linear-gradient(135deg, #0a5629 0%, #2f5741 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.header-content h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.header-content p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.back-btn, .export-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.back-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.export-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.export-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Dashboard de Ventas */
+.sales-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Tarjetas de Resumen */
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #075e29 0%, #3d5644 100%);
+    color: white;
+}
+
+.card-content h3 {
+    margin: 0 0 0.5rem 0;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Controles de Ventas */
+.sales-controls {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.date-range, .category-filter, .sort-options {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.date-range label, .category-filter label, .sort-options label {
+    font-weight: 600;
+    color: #555;
+    white-space: nowrap;
+}
+
+.date-range input, .category-filter select, .sort-options select {
+    padding: 0.5rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+}
+
+.date-range input:focus, .category-filter select:focus, .sort-options select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #5a6fd8;
+}
+
+/* Contenido de Ventas */
+.sales-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.sales-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.section-header {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e1e5e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.section-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.clear-all-btn {
+    padding: 0.5rem 1rem;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.clear-all-btn:hover {
+    background: #c82333;
+}
+
+/* Lista de Ventas */
+.sales-list {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.sale-item {
+    padding: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+    gap: 1rem;
+}
+
+.sale-item:hover {
+    background: #f8f9fa;
+}
+
+.sale-item:last-child {
+    border-bottom: none;
+}
+
+.sale-info {
+    flex: 1;
+}
+
+.sale-product-name {
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+}
+
+.sale-details {
+    display: flex;
+    gap: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.sale-price {
+    font-weight: 700;
+    color: #28a745;
+    font-size: 1.2rem;
+}
+
+.sale-date {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* Sin Ventas */
+.no-sales {
+    padding: 3rem;
+    text-align: center;
+}
+
+.no-sales-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.no-sales-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.no-sales-content h3 {
+    color: #666;
+    margin: 0 0 1rem 0;
+}
+
+.no-sales-content p {
+    color: #888;
+    margin: 0 0 2rem 0;
+}
+
+.go-to-products-btn {
+    padding: 0.75rem 2rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.go-to-products-btn:hover {
+    background: #5a6fd8;
+}
+
+/* Resumen por Categoría */
+.category-summary {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    height: fit-content;
+}
+
+.category-summary h3 {
+    margin: 0 0 1.5rem 0;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.category-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.category-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.category-name {
+    font-weight: 600;
+    color: #333;
+}
+
+.category-values {
+    text-align: right;
+}
+
+.category-count {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.category-total {
+    font-size: 0.9rem;
+    color: #28a745;
+    font-weight: 600;
+}
+
+/* Botón de Ventas en la página principal */
+.sales-btn {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.sales-btn:hover {
+    background: linear-gradient(135deg, #218838 0%, #1ea085 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sales-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .summary-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .sales-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .date-range, .category-filter, .sort-options {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .header-actions {
+        flex-direction: column;
+    }
+    
+    .sale-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .sale-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Estilos específicos para imágenes en ventas */
+.sale-image-container {
+    width: 80px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 2px solid #e1e5e9;
+}
+
+.sale-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Ajustes responsive para imágenes en ventas */
+@media (max-width: 768px) {
+    .sale-image-container {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .sale-item {
+        gap: 0.75rem;
+    }
+}
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Ventas - Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ventas.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="sales-header">
+                <div class="header-content">
+                    <h1>💰 Reporte de Ventas</h1>
+                    <p>Resumen de productos vendidos y ganancias</p>
+                </div>
+                <div class="header-actions">
+                    <button id="backToProducts" class="back-btn" onclick="window.location.href='index.html'">
+                        ← Volver a Productos
+                    </button>
+                    <button id="exportSales" class="export-btn">
+                        📊 Exportar Reporte
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="sales-dashboard">
+            <!-- Resumen General -->
+            <div class="summary-cards">
+                <div class="summary-card total-sales">
+                    <div class="card-icon">💰</div>
+                    <div class="card-content">
+                        <h3>Total Vendido</h3>
+                        <span id="totalSalesAmount" class="card-value">L. 0.00</span>
+                    </div>
+                </div>
+                
+                <div class="summary-card total-items">
+                    <div class="card-icon">📦</div>
+                    <div class="card-content">
+                        <h3>Productos Vendidos</h3>
+                        <span id="totalItemsSold" class="card-value">0</span>
+                    </div>
+                </div>
+                
+                <div class="summary-card avg-price">
+                    <div class="card-icon">📊</div>
+                    <div class="card-content">
+                        <h3>Precio Promedio</h3>
+                        <span id="averagePrice" class="card-value">$0.00</span>
+                    </div>
+                </div>
+                
+                <div class="summary-card categories">
+                    <div class="card-icon">🏷️</div>
+                    <div class="card-content">
+                        <h3>Categorías</h3>
+                        <span id="categoriesCount" class="card-value">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filtros y Controles -->
+            <div class="sales-controls">
+                <div class="date-range">
+                    <label for="dateFrom">Desde:</label>
+                    <input type="date" id="dateFrom">
+                    <label for="dateTo">Hasta:</label>
+                    <input type="date" id="dateTo">
+                    <button id="applyDateFilter" class="filter-btn">Aplicar</button>
+                </div>
+                
+                <div class="category-filter">
+                    <label for="salesCategoryFilter">Categoría:</label>
+                    <select id="salesCategoryFilter">
+                        <option value="">Todas las categorías</option>
+                    </select>
+                </div>
+                
+                <div class="sort-options">
+                    <label for="salesSortBy">Ordenar por:</label>
+                    <select id="salesSortBy">
+                        <option value="date">Fecha de venta</option>
+                        <option value="name">Nombre</option>
+                        <option value="price">Precio</option>
+                        <option value="category">Categoría</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Lista de Productos Vendidos -->
+            <div class="sales-content">
+                <div class="sales-section">
+                    <div class="section-header">
+                        <h2>🛒 Productos Vendidos</h2>
+                        <div class="section-actions">
+                            <button id="clearAllSales" class="clear-all-btn">
+                                🗑️ Limpiar Todo
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="sales-list" id="salesList">
+                        <!-- Los productos vendidos se mostrarán aquí -->
+                    </div>
+                    
+                    <div class="no-sales" id="noSales" style="display: none;">
+                        <div class="no-sales-content">
+                            <div class="no-sales-icon">📊</div>
+                            <h3>No hay ventas registradas</h3>
+                            <p>Los productos que marques como vendidos aparecerán aquí</p>
+                            <button onclick="window.location.href='index.html'" class="go-to-products-btn">
+                                Ir a Productos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resumen por Categoría -->
+                <div class="category-summary">
+                    <h3>📈 Resumen por Categoría</h3>
+                    <div class="category-stats" id="categoryStats">
+                        <!-- Las estadísticas por categoría se mostrarán aquí -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>📦 Catálogo de Productos</h3>
+                <p>Gestiona tu inventario de manera eficiente</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" title="Facebook">
+                        <span>📘</span> Facebook
+                    </a>
+                    <a href="#" class="social-link instagram" title="Instagram">
+                        <span>📷</span> Instagram
+                    </a>
+                    <a href="#" class="social-link whatsapp" title="WhatsApp">
+                        <span>💬</span> WhatsApp
+                    </a>
+                    <a href="#" class="social-link email" title="Email">
+                        <span>📧</span> Email
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Información</h4>
+                <p>© 2025 Catálogo de Productos</p>
+                <p>Desarrollado para construir una marca</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="ventas.js"></script>
+</body>
+</html>
