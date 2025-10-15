@@ -23,7 +23,7 @@ const productsData = [
     { id: 8, name: "Calzoncillo Nike / Paq. 3", price: 700.00, stock: 1, category: "Ropa Interior", brand: "Nike", code: "CAL003", image:"https://i.ebayimg.com/thumbs/images/g/uy4AAOSwIHhnh-rl/s-l1200.jpg" },
     { id: 9, name: "Mochila de Bluey con ruedita", price: 900.00, stock: 1, category: "Accesorios", brand: "Bluey", code: "MOC001", image:"https://m.media-amazon.com/images/I/71NpvGkVc4L._UY1000_.jpg" },
     { id: 10, name: "Bote Adidas negro", price: 320.00, stock: 1, category: "Accesorios", brand: "Adidas", code: "BOT001", image:"" },
-    { id: 11, name: "Bote beige", price: 320.00, stock: 1, category: "Accesorios", brand: "Genérico", code: "BOT002", image:"https://hydrapeak.com/cdn/shop/files/HP-32oz-Nomad-StoneFRONT_15d636e2-35a2-419d-b341-5855d071d7d3.png?v=1715430069&width=533" },
+    { id: 11, name: "Bote beige", price: 320.00, stock: 1, category: "Accesorios", brand: "Genérico", code: "BOT002", image:"https://hydrapeak.com/cdn/shop/collections/product1.png?v=1716317020&width=533" },
     { id: 12, name: "Bote morado", price: 320.00, stock: 1, category: "Accesorios", brand: "Genérico", code: "BOT003", image:"" },
     { id: 13, name: "Bote rosado", price: 320.00, stock: 1, category: "Accesorios", brand: "Genérico", code: "BOT004", image:"" },
     { id: 14, name: "Tenis Puma - blanco - Talla 8", price: 2300.00, stock: 1, category: "Calzado", brand: "Puma", code: "TEN001", image:"" },
@@ -547,5 +547,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializar la aplicación con los datos predefinidos
     initializeApp();
 });
+
 
 
