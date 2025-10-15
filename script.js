@@ -18,12 +18,12 @@ const productsData = [
     { id: 3, name: "Gorra Yankees", price: 550.00, stock: 1, category: "Accesorios", brand: "Yankees", code: "GOR002", image: "https://m.media-amazon.com/images/I/51+8OFrgCHL._AC_SL1000_.jpg" },
     { id: 4, name: "Lonchera de Mario Bros.", price: 400.00, stock: 1, category: "Accesorios", brand: "Nintendo", code: "LON001", image: "https://chenson.com.mx/cdn/shop/files/bc842d63-b1c2-455e-944e-160d473a3553_800x.jpg?v=1717198841" },
     { id: 5, name: "Lonchera de Jessica Simpson", price: 500.00, stock: 1, category: "Accesorios", brand: "Jessica Simpson", code: "LON002", image: "https://m.media-amazon.com/images/I/71vkCxDsidL._UF894,1000_QL80_.jpg" },
-    { id: 6, name: "Calzoncillo Calvin / Paq. 4", price: 650.00, stock: 1, category: "Ropa Interior", brand: "Calvin Klein", code: "CAL001", image: "https://resources.claroshop.com/medios-plazavip/mkt/65a85b8422b0d_c2265c42-2511-4d56-905c-df708a14e311png.jpg" },
+    { id: 6, name: "Calzoncillo Calvin / Paq. 3", price: 650.00, stock: 1, category: "Ropa Interior", brand: "Calvin Klein", code: "CAL001", image: "https://resources.claroshop.com/medios-plazavip/mkt/65a85b8422b0d_c2265c42-2511-4d56-905c-df708a14e311png.jpg" },
     { id: 7, name: "Calzoncillo Nautica / Paq. 4", price: 580.00, stock: 1, category: "Ropa Interior", brand: "Nautica", code: "CAL002", image: "https://nautica.com.pa/cdn/shop/files/39Y6040401_02531__1_f98d0981-a48a-42d5-aa1f-63447dbeeaaa.jpg?v=1712076793"},
-    { id: 8, name: "Calzoncillo Nike / Paq. 4", price: 700.00, stock: 1, category: "Ropa Interior", brand: "Nike", code: "CAL003", image:"https://i.ebayimg.com/thumbs/images/g/uy4AAOSwIHhnh-rl/s-l1200.jpg" },
+    { id: 8, name: "Calzoncillo Nike / Paq. 3", price: 700.00, stock: 1, category: "Ropa Interior", brand: "Nike", code: "CAL003", image:"https://i.ebayimg.com/thumbs/images/g/uy4AAOSwIHhnh-rl/s-l1200.jpg" },
     { id: 9, name: "Mochila de Bluey con ruedita", price: 900.00, stock: 1, category: "Accesorios", brand: "Bluey", code: "MOC001", image:"https://m.media-amazon.com/images/I/71NpvGkVc4L._UY1000_.jpg" },
     { id: 10, name: "Bote Adidas negro", price: 320.00, stock: 1, category: "Accesorios", brand: "Adidas", code: "BOT001", image:"" },
-    { id: 11, name: "Bote beige", price: 320.00, stock: 1, category: "Accesorios", brand: "Genérico", code: "BOT002", image:"" },
+    { id: 11, name: "Bote beige", price: 320.00, stock: 1, category: "Accesorios", brand: "Genérico", code: "BOT002", image:"https://hydrapeak.com/cdn/shop/files/HP-32oz-Nomad-StoneFRONT_15d636e2-35a2-419d-b341-5855d071d7d3.png?v=1715430069&width=533" },
     { id: 12, name: "Bote morado", price: 320.00, stock: 1, category: "Accesorios", brand: "Genérico", code: "BOT003", image:"" },
     { id: 13, name: "Bote rosado", price: 320.00, stock: 1, category: "Accesorios", brand: "Genérico", code: "BOT004", image:"" },
     { id: 14, name: "Tenis Puma - blanco - Talla 8", price: 2300.00, stock: 1, category: "Calzado", brand: "Puma", code: "TEN001", image:"" },
@@ -547,3 +547,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializar la aplicación con los datos predefinidos
     initializeApp();
 });
+
